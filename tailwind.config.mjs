@@ -10,10 +10,10 @@ export default {
                     },
                     'text-primary': '#7A7A7A',
                     'metallic': {
-                        light: '#D6D6D6', // Deeper silver with better contrast
-                        base: '#AFAFAF',  // Stronger medium metallic gray
-                        dark: '#7A7A7A',  // Even deeper metallic gray
-                        accent: '#B8B8B8', // Well-balanced light gray for accents
+                        light: '#B8B8B8',  // Darker silver for better contrast (was D6D6D6)
+                        base: '#969696',   // Darker medium metallic gray (was AFAFAF)
+                        dark: '#666666',   // Deeper metallic gray (was 7A7A7A)
+                        accent: '#8A8A8A', // Darker gray for accents (was B8B8B8)
                     },
                 },
                 backgroundImage: {

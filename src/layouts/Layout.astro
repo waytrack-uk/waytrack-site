@@ -16,14 +16,13 @@ const { title } = Astro.props;
         <meta charset="UTF-8" />
         <meta name="description" content="Astro description" />
         <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
     </head>
     <body class="min-h-screen bg-page-bg-light">
         <div class="fixed inset-0 bg-gradient-to-br from-page-bg-light via-page-bg to-page-bg-dark opacity-95 -z-10"></div>
         <Nav />
-        <main class="mt-20 relative">
+        <main class="h-[calc(100vh-5rem)] flex items-center mt-20">
             <slot />
         </main>
     </body>

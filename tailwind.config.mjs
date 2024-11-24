@@ -22,7 +22,7 @@ export default {
                 },
             },
             fontFamily: {
-            'system': ['-apple-system'],
+                'system': ['-apple-system'],
             },
         },
     plugins: [],

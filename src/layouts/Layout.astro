@@ -1,0 +1,30 @@
+---
+// src/layouts/Layout.astro
+import '../styles/base.css';
+import Nav from '../components/Nav.astro';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="font-sans">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Astro description" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+    </head>
+    <body class="min-h-screen bg-page-bg-light">
+        <div class="fixed inset-0 bg-gradient-to-br from-page-bg-light via-page-bg to-page-bg-dark opacity-95 -z-10"></div>
+        <Nav />
+        <main class="mt-20 relative">
+            <slot />
+        </main>
+    </body>
+</html>

@@ -4,13 +4,13 @@
 
 <section class="min-h-screen w-full flex justify-center items-center -mt-[170px] md:-mt-[80px] px-4 sm:px-6">
     <div class="flex flex-col items-center text-center">
-        <div class="text-6xl md:text-9xl font-semibold opacity-0 translate-y-[10px] animate-fadeIn">
+        <div class="text-6xl md:text-9xl font-semibold opacity-0 animate-[fadeIn_1s_ease_forwards]">
             <span class="bg-gradient-to-br from-metallic-light via-metallic-base to-metallic-dark text-transparent bg-clip-text drop-shadow-[0_1px_1px_rgba(0,0,0,0.15)]">
                 Waytrack
             </span>
         </div>
         
-        <div class="mt-5 text-xl sm:text-2xl md:text-3xl text-metallic-accent font-light tracking-wide opacity-0 translate-y-[10px] animate-fadeIn animation-delay-200">
+        <div class="mt-5 md:mt-8 text-xl sm:text-2xl md:text-3xl text-metallic-accent font-light tracking-wide opacity-0 animate-[fadeIn_1s_ease_forwards_0.2s]">
            Building The Future.
         </div>
     </div>
@@ -18,23 +18,17 @@
 
 <style>
     @keyframes fadeIn {
-        from {
+        0% {
             opacity: 0;
             transform: translateY(10px);
+            -webkit-font-smoothing: antialiased;
+            backface-visibility: hidden;
         }
-        to {
+        100% {
             opacity: 1;
             transform: translateY(0);
+            -webkit-font-smoothing: antialiased;
+            backface-visibility: hidden;
         }
-    }
-
-    .animate-fadeIn {
-        animation: fadeIn 1s ease forwards;
-    }
-
-    /* Ensure smooth text rendering during animation */
-    .animate-fadeIn {
-        -webkit-font-smoothing: antialiased;
-        backface-visibility: hidden;
     }
 </style>
